@@ -1,9 +1,9 @@
 package main
 
 import (
+	"fmt"
 	"git.oschina.net/jscode/go-package-plantuml/codeanalysis"
 	log "github.com/Sirupsen/logrus"
-	"fmt"
 	"io/ioutil"
 )
 
@@ -12,8 +12,8 @@ func main() {
 	log.SetLevel(log.InfoLevel)
 
 	config := codeanalysis.Config{
-		CodeDir: "/appdev/gopath/src/github.com/contiv/netplugin",
-		GopathDir : "/appdev/gopath",
+		CodeDir:   "/appdev/gopath/src/github.com/contiv/netplugin",
+		GopathDir: "/appdev/gopath",
 	}
 
 	config.VendorDir = config.CodeDir + "/vendor"
